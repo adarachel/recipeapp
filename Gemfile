@@ -79,4 +79,3 @@ gem 'cancancan'
 
 # devise gem for authentication
 gem 'devise', '~> 4.9'
-
