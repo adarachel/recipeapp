@@ -1,7 +1,8 @@
 <div>
-  <h3> Add Food</h3>
+  <div class="new-food">
   <%= form_with url: foods_path, scope: :food do |form| %>
     <div >
+    <%= form.hidden_field :user_id, value: current_user.id %>
     <%= form.label :Name %><br>
     <%= form.text_field :name, class: "form-control", require: true %>
     </div>
@@ -17,6 +18,9 @@
     <%= form.label :Quantity %><br>
     <%= form.number_field :quantity, class: "form-control", require: true %>
     </div>
-    <%= form.submit "Submit" %>
+    <div class="submit">
+    <%= form.submit "Create Food", class: "food-create" %>
+    </div>
   <% end %>
+  </div>
 </div>
