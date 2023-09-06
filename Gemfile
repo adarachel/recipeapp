@@ -79,3 +79,6 @@ gem 'cancancan'
 
 # devise gem for authentication
 gem 'devise', '~> 4.9'
+
+# add bullet gem for N+1 queries
+gem 'bullet'
